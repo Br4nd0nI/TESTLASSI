@@ -1,9 +1,8 @@
 <?php 
 
 session_start();
-
-
 include("conexion.php");
+
 $usu=$_POST["txtusu"];
 $pass=$_POST["txtpass"];
 

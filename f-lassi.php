@@ -63,7 +63,7 @@ if(VerfExistencTest() == true){
 ?>
 
 <form action="p-lassi.php" method="post">
-    <input type="text" name="carnet" id="">
+    
     <?php include("conexion.php"); 
     $sql = "select idPregunta,ContPregunta from `l-pregunta`  ";
     $preguntas = mysql_query($sql,$cn);
@@ -79,6 +79,7 @@ if(VerfExistencTest() == true){
     <?php }
         ?>
     <br>
+    <input type="hidden" name="carnet" value = "<?php echo $carnteUn; ?>">
     <input type="hidden" name="idTest" value="<?php echo $idtest;  ?>">
     <input type="hidden" name="restriccion" value="<?php echo $restricc;  ?>">
     <input type="submit" name="btnresult" value="..terminar.." placeholder="terminar">

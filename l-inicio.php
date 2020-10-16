@@ -72,12 +72,24 @@ include("conexion.php");
 
 <br>
 <br>
-<form action="f-lassi.php" method="post">
+<div align="center">
+	<form action="f-lassi.php" method="post">
 <input align="" type="submit" value="INCIAR TEST">
 </form>
+<br>
+<br>
 <form action="l_principal.php" method="post">
 <input align="" type="submit" value="Precedente">
+<br>
 </form>
+
+<br>
+<form action="l_auth.php" method="get">
+	<input type="hidden" name="cerrar" value="cerrar">
+	<input type="submit" value="Cerrar Sesion">
+</form>
+</div>
+
 
 </body>
 </html>
